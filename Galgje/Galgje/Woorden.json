@@ -1,42 +1,42 @@
 [
   {
     "Id": 1,
-    "Woord": "Sneeuwpop"
+    "Woord": "sneeuwpop"
   },
   {
     "Id": 2,
-    "Woord": "Wijngaard"
+    "Woord": "wijngaard"
   },
   {
     "Id": 3,
-    "Woord": "Cultuur"
+    "Woord": "cultuur"
   },
   {
     "Id": 4,
-    "Woord": "Speer"
+    "Woord": "speer"
   },
   {
     "Id": 5,
-    "Woord": "Chirurg"
+    "Woord": "chirurg"
   },
   {
     "Id": 6,
-    "Woord": "Heks"
+    "Woord": "heks"
   },
   {
     "Id": 7,
-    "Woord": "Afgestudeerde"
+    "Woord": "afgestudeerde"
   },
   {
     "Id": 8,
-    "Woord": "Ecoloog"
+    "Woord": "ecoloog"
   },
   {
     "Id": 9,
-    "Woord": "Zuurstof"
+    "Woord": "zuurstof"
   },
   {
     "Id": 10,
-    "Woord": "Hoofd"
+    "Woord": "hoofd"
   }
 ]

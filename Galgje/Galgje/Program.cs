@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Text.Json;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace Galgje
@@ -14,6 +15,7 @@ namespace Galgje
         public static string gekozenWoord;
 
         public static Char[] charArray;
+        public static char[] woordVoort;
 
         static void Main(string[] args)
         {
@@ -29,13 +31,18 @@ namespace Galgje
             // wanneer alle kansen op zijn zeg game over.
             // wanneer het woord geraden is zeg je hebt gewonnen.
 
-            //ReadAllText(path);
 
             List<Woorden> woorden = ReadUsersFromList(path);
             Woorden kiesWoord = KiesEenWoord(woorden);
 
             charArray = gekozenWoord.ToCharArray();
-            var found = new char[charArray.Length];
+         
+            woordVoort = gekozenWoord.ToCharArray();
+
+            for (int i = 0; i < woordVoort.Length; i++)
+            {
+                woordVoort[i] = '_';
+            }
 
             if (kiesWoord != null)
             {
@@ -56,7 +63,7 @@ namespace Galgje
             while (!spelersGekozen)
             {
                 string spelersString = Console.ReadLine();
-                //int spelers = Convert.ToInt32(spelersString);
+                
                 int spelers;
                 if (int.TryParse(spelersString, out spelers))
                 {
@@ -97,15 +104,32 @@ namespace Galgje
                     Console.WriteLine($"Speler {i} is aan de beurt. Kies een letter.");
                     char letter = Convert.ToChar(Console.ReadLine().ToLower());
                     
-                    foreach (char c in charArray)
+                    //For loop op woordVoort.Length
+                    //Als char geen _ is, dan niets doen
+                    //Als char in gekozenwoord[i] gelijk is aan letter, dan aanpassen in woordVoort[i]
+
+                    for (int j = 0; j >= woordVoort.Length; j++)
                     {
-                        Console.Write("_");
+                        if (woordVoort[j] != '_')
+                        {
+                            Console.Write("_");
+                        }
+                    }
+                    /*foreach (char c in charArray)
+                    {
+                        
                         if (c == letter)
                         {
                             //laat letter zien op de plaats in het woord.
                             Console.Write(c);
                         }
-                    }
+                        else
+                        {
+                            Console.Write("_");
+                        }
+
+                    }*/
+                    Console.WriteLine(woordVoort);
 
                     for (int index = 0; index < charArray.Length; index++)
                     {
