@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Woord": "Sneeuwpop"
+  },
+  {
+    "Id": 2,
+    "Woord": "Wijngaard"
+  },
+  {
+    "Id": 3,
+    "Woord": "Cultuur"
+  },
+  {
+    "Id": 4,
+    "Woord": "Speer"
+  },
+  {
+    "Id": 5,
+    "Woord": "Chirurg"
+  },
+  {
+    "Id": 6,
+    "Woord": "Heks"
+  },
+  {
+    "Id": 7,
+    "Woord": "Afgestudeerde"
+  },
+  {
+    "Id": 8,
+    "Woord": "Ecoloog"
+  },
+  {
+    "Id": 9,
+    "Woord": "Zuurstof"
+  },
+  {
+    "Id": 10,
+    "Woord": "Hoofd"
+  }
+]
